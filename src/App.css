@@ -1,42 +1,130 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: cadetblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.img {
+  width: 15px;
+  height: 15px;
+}
+.input-contrainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cityInput {
+  flex: 1;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: beige;
+  padding: 10px;
+}
+.search-icon {
+  padding: 10px;
+  /* padding-top: 15px; */
+  padding-right: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+.search-icon img {
+  margin-top: 8px;
+}
+.image img {
+  height: 130px;
+  width: 140px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.image {
+  text-align: center;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.temp,
+.location,
+.country {
+  margin-top: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.temp {
+  font-weight: 500;
+  padding-top: 15px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.location {
+  color: darkorange;
+  font-weight: 400;
+  font-size: 40px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.country {
+  font-size: 18px;
+  color: darkgray;
+  font-weight: 700;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cord div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
-
-.card {
-  padding: 2em;
+.cord div span {
+  font-size: 14px;
 }
-
-.read-the-docs {
+.humidity-percent,
+.wind-speed,
+.cord div span:nth-child(2) {
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  padding-top: 5px;
+}
+.icon {
+  width: 90px;
+  height: 90px;
+}
+.data-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.element {
+  text-align: center;
+}
+.text {
+  font-size: 12px;
   color: #888;
+  font-weight: bold;
 }
